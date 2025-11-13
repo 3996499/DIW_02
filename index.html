@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <!-- Logo y nombre -->
+            <a class="navbar-brand d-flex align-items-center" href="#inicio">
+                <img src="img/logo_escudo.png" width="30" height="40" class="me-2 rounded-circle">
+                <span>Águilas</span>
+            </a>
+            <!-- Botón hamburguesa en móvil -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavBar"
+                aria-controls="mainNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavBar"
+                aria-controls="mainNavBar" aria-expanded="false" aria-label="Toggle navigation"> -->
+
+            <!--Enlaces -->
+            <div class="collapse navbar-collapse" id="mainNavBar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#historia">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#que-visitar">Qué visitar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gastronomia">Gastronomía</a>
+                    </li>
+
+                    <!--Desplegable como extra -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Más
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#fiestas">Carnaval</a></li>
+                            <li><a class="dropdown-item" href="#video">Vídeo</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+    <header id="inicio" class="mt-5 pt-4">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/imagen1.jpg" class="d-block w-100" alt="Imagen 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Bienvenidos a Águilas</h5>
+                        <p>Descubre la belleza de nuestra ciudad costera.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/imagen2.jpg" class="d-block w-100" alt="Imagen 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Calas Cristalinas</h5>
+                        <p>Agua transparente perfecta para el buceo.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/imagen3.jpg" class="d-block w-100" alt="Imagen 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Encanto mediterráneo</h5>
+                        <p>Historia, gastronomía y tradición en cada calle.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="historia" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>Historia de Águilas</h2>
+                    <p>Águilas, con sus raíces que se remontan a la época romana, ha sido un
+                        importante puerto pesquero y comercial a lo largo de los siglos. Su
+                        historia está marcada por la influencia de diversas culturas, desde los
+                        fenicios hasta los árabes, que han dejado su huella en la arquitectura y
+                        tradiciones locales.</p>
+
+                </div>
+                <div class="col-md-6">
+                    <img src="img/historia.jpg" class="img-fluid rounded" alt="Historia de Águilas">
+                </div>
+                <!-- Botones con enlaces -->
+                <div class="mt-3">
+                    <a href="https://www.google.com/maps/place/Águilas,+Murcia/" target="_blank"
+                        class="btn btn-outline-primary me-3">
+                        Cómo llegar
+                    </a>
+
+                    <a href="https://www.booking.com/searchresults.es.html?ss=Águilas%2C+Murcia" target="_blank"
+                        class="btn btn-success">
+                        Reservar alojamiento
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section id="que-visitar" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 order-1 order-md-2">
+                    <h2>Qué visitar en Águilas</h2>
+                    <p>Desde las impresionantes playas de Calarreona y La Carolina hasta el
+                        majestuoso Castillo de San Juan de las Águilas, la ciudad ofrece una
+                        variedad de lugares para explorar. No te pierdas el Museo Arqueológico
+                        Municipal y el Faro de Águilas para una experiencia cultural completa.</p>
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <img src="img/que_visitar.webp" class="img-fluid rounded" alt="Qué visitar en Águilas">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gastronomia" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 order-1 order-md-2">
+                    <h2>Gastronomía de Águilas</h2>
+                    <p>La gastronomía de Águilas es un reflejo de su entorno costero, con
+                        platos tradicionales como el caldero, la gamba roja y el pulpo a la
+                        murciana. Los mercados locales y los restaurantes frente al mar ofrecen
+                        una experiencia culinaria auténtica que no te puedes perder.</p>
+                </div>
+                <div class="col-12 col-md-6 order-2 order-md-1">
+                    <img src="img/gastronomia.jpg" class="img-fluid rounded" alt="Gastronomía de Águilas">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="fiestas" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 order-1 order-md-2">
+
+                    <h2>Carnaval de Águilas</h2>
+                    <p>El Carnaval de Águilas es una de las celebraciones más vibrantes y coloridas
+                        de la región. Con desfiles llenos de disfraces elaborados, música en vivo y
+                        una atmósfera festiva, este evento atrae a visitantes de todas partes para
+                        disfrutar de la alegría y la tradición local.</p>
+                </div>
+                <div class="col-12 col-md-6 order-2 order-md-1">
+                    <img src="img/carnaval.jpg" class="img-fluid rounded" alt="Carnaval de Águilas">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="info-practica" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 order-2 order-1">
+                    <h2>Información práctica </h2>
+                    <p>Águilas es una ciudad costera situada al suroeste de la Región de Murcia, conocida por
+                        sus playas, su clima soleado y su ambiente tranquilo durante todo el año. Está bien
+                        comunicada por carretera, tren y autobús con Murcia, Lorca y Almería. Entre sus
+                        principales atractivos destacan el Castillo de San Juan, el puerto deportivo y el
+                        emblemático Carnaval, declarado de Interés Turístico Internacional. Dispone de una
+                        amplia oferta de alojamientos, desde hoteles frente al mar hasta casas rurales, y una
+                        gastronomía basada en productos del mar como el caldero o el pulpo. Es un destino ideal
+                        para disfrutar de naturaleza, cultura y descanso en cualquier época del año.</p>
+
+                    <div class="table-responsive mt-4">
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Dato</th>
+                                    <th>Información</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Población</td>
+                                    <td>35.000 habitantes aprox.</td>
+                                </tr>
+                                <tr>
+                                    <td>Provincia</td>
+                                    <td>Región de Murcia</td>
+                                </tr>
+                                <tr>
+                                    <td>Temperatura media</td>
+                                    <td>18°C-20°C</td>
+                                </tr>
+                                <tr>
+                                    <td>Fiesta destacada</td>
+                                    <td>Carnaval de Águilas</td>
+                                </tr>
+                                <tr>
+                                    <td>Playa</td>
+                                    <td> Más de 35 playas y calas</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+    </section>
+    <section id="video" class="py-5">
+        <div class="container">
+            <h2 class="mb-4">Descubre el lugar en vídeo</h2>
+            <div class="mx-auto" style="max-width: 650px;">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/VFlpdOBJ80Q" title="Video sobre aguilas" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+    </section>
+    </div>
+
+    <footer>
+        <p class="mb-0">&copy; 2025 Turismo de Águilas · Web realizada con Bootstrap 5 - Carlos Melenchon Gabarrón CIFP
+            CARLOS III</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
