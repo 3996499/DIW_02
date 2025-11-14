@@ -72,8 +72,9 @@ p {
     border-radius: 0.5rem;
     padding: 1rem;
 }
-
+/* Fondo semitransparente para las leyendas del carrusel */
 .carousel-caption p,
+/* Estilo para el texto de las leyendas del carrusel */
 .carousel-caption h5 {
     color: #fff !important;
 }
