@@ -73,6 +73,11 @@ p {
     padding: 1rem;
 }
 
+.carousel-caption p,
+.carousel-caption h5 {
+    color: #fff !important;
+}
+
 /* Estilo para los encabezados de las tablas */
 footer {
     text-align: center;
